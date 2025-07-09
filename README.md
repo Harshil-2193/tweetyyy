@@ -1,0 +1,1 @@
+Tweetyy is a lightweight Twitter-style microblogging application built with Django. It allows users to post short messages ("tweets"), follow other users, and interact in a minimal social-media-like environment.
