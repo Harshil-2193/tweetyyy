@@ -1,0 +1,39 @@
+# Virtual environment
+venv/
+env/
+myenv/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*.so
+
+# SQLite database
+*.sqlite3
+db.sqlite3
+
+# Django migrations
+*/migrations/__pycache__/
+*/migrations/*.py[cod]
+*/migrations/*.py
+!*/migrations/__init__.py  # keep the init file
+
+# Media (user-uploaded files)
+media/
+
+# Static files (if collected using collectstatic)
+staticfiles/
+static/
+
+# VS Code and IDE config
+.vscode/
+.idea/
+*.swp
+
+# Secret/config files
+.env
+*.log
+
+# macOS and Windows system files
+.DS_Store
+Thumbs.db
