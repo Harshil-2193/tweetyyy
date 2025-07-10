@@ -58,6 +58,17 @@
             />
             <button class="btn btn-outline-light" type="submit">Search</button>
           </form>
+            <a href="{%url "tweet_list"%}" class="btn btn-primary mx-2">Home</a>
+            {% if user.is_authenticated %} 
+              <form method="post" action="{%url "logout_page"%}">
+                {% csrf_token %}
+                <button class="btn btn-danger" type="submit">Logout</button>
+              </form>
+            {% else %}
+              <a href="{% url 'register_page' %}" class="btn btn-primary">Register</a>
+              <a href="{% url 'login_page' %}" class="btn btn-success ms-2">Login</a>
+            {% endif %}
+
         </div>
       </div>
     </nav>
